@@ -10,7 +10,14 @@ namespace MathApp3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("2+2 = 4");
+            int a = 3, b = 7;
+            float c = 4.2f, d = 5.0f;
+
+            Console.WriteLine(a.ToString() + " + " + b.ToString() + " = " + SimpleMath.Add(a, b));
+            Console.WriteLine(c.ToString() + " + " + d.ToString() + " = " + AdvancedMath.Add(c, d));
+            Console.WriteLine(c.ToString() + " * " + d.ToString() + " = " + AdvancedMath.Multiply(c, d));
+
+            Console.ReadLine();
         }
     }
 }
